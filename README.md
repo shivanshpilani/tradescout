@@ -6,13 +6,13 @@
 
 Give it a product, an HSN code and a target country. It finds companies abroad that import or use that exact product, shows the evidence for each one, waits for you to choose, finds the person who decides and their work email, writes an email from that buyer's evidence, checks it, and waits for your approval.
 
-The repository is called `tradescout` because the product grew out of that codebase during the day. The current product is on the branch [`pivot/agentic-buyer-desk`](https://github.com/shivanshpilani/tradescout/tree/pivot/agentic-buyer-desk). The fork's `main` still holds the earlier, rules-only version.
+The repository is called `tradescout` because the product grew out of that codebase during the day. The current product is on the branch [`pivot/agentic-buyer-desk`](https://github.com/shivanshpilani/tradescout/tree/pivot/agentic-buyer-desk). It was merged into the team's repository, [Jeevannnn20/tradescout](https://github.com/Jeevannnn20/tradescout), at 6:23 PM. The fork's `main` still holds the earlier, rules-only version.
 
 **Contents:** [1. The service explained](#1-the-service-explained) · [2. What it does now](#2-what-it-does-now) · [3. What comes next](#3-what-comes-next) · [4. How it runs](#4-how-it-runs) · [5. What we tried](#5-what-we-tried) · [6. Why this way](#6-why-this-way)
 
 ### How to read the status labels
 
-Every capability in this document carries one of these labels. Status is as of 6:23 PM IST on 22 November 2026, at commit [`6a0f5eb`](https://github.com/shivanshpilani/tradescout/commit/6a0f5eb).
+Every capability in this document carries one of these labels. Status is as of 6:27 PM IST on 22 November 2026, at commit [`384c82c`](https://github.com/shivanshpilani/tradescout/commit/384c82c).
 
 | Label | Meaning |
 |---|---|
@@ -199,7 +199,7 @@ The origin reading, added at 6:08 PM, ran live through planning and customs for 
 
 ### How we tested it
 
-On a fresh clone at `6a0f5eb`, with Node 22.14:
+On a fresh clone at `384c82c`, with Node 22.14:
 
 - **235 automated tests in twelve files pass**, with a one-line stand-in for one public OFAC reference file that isn't bundled (see the [run instructions](#tests)). They cover crash and resume, racing resumes, caps, duplicate execution, unknown outcomes, malformed responses, draft checks, redaction, the don't-contact list, related parties, seller origin, CRM sync and outreach.
 - **The TypeScript type check passes.**
